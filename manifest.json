@@ -1,0 +1,17 @@
+{
+  "name": "OW Comp Rating",
+  "description": "On Battlefy, show player's rating.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  },
+  "browser_action": {
+	"default_icon": "icon.png",
+    "default_title": "Show player's rating"
+  },
+  "manifest_version": 2
+}
