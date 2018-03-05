@@ -38,7 +38,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 									bTimeUnit = 3600;
 								}
 								var bTimePlayed = topHeroes[b].timePlayed === '--' ? 0 : parseInt(topHeroes[b].timePlayed) * bTimeUnit;
-								
+
 								return bTimePlayed - aTimePlayed;
 							});
 							var mostPlayedHeroes = sortedHeroes.slice(0,3);
@@ -50,7 +50,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 									}
 								);
 								heroNode = document.createElement('span');
-								heroNode.style.fontSize = '7%';
+								heroNode.style.fontSize = '10px';
 								heroNode.style.display = 'inherit';
 								mostInfo.map(most => {
 									mostSpan = document.createElement('span');
@@ -59,7 +59,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 									heroNode.appendChild(mostSpan);
 								});
 							}
-							
+
 							if (rating === '' || !rating) {
 								element.appendChild(document.createTextNode(': Unranked'));
 								element.style.width = '320px';
